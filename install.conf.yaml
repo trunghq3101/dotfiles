@@ -1,0 +1,10 @@
+- clean:
+    - "~"
+- link:
+    ~/.gitconfig:
+        force: true
+    ~/.zsh:
+    ~/.zshrc:
+        force: true
+- shell:
+    - [sudo chsh -s /usr/bin/zsh, Change default shell to ZSH]

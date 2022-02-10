@@ -1,0 +1,6 @@
+[user]
+    name = trunghq3101
+    email = trunghq3101@gmail.com
+
+[alias]
+    adog = log --all --decorate --oneline --graph

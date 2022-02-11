@@ -9,6 +9,7 @@
       force: true
 - shell:
     - [sudo chsh -s /usr/bin/zsh, Changing default shell to ZSH]
+    - [./import.sh, Importing GPG keys]
     - [source ~/.zshrc && dedot, Decrypting secrets]
     - [cp -afi ssh/. ~/.ssh/, Copying SSH folder]
     - [chmod -R 0700 ssh ~/.ssh, Making SSH folder read-only]

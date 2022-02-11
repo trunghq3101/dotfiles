@@ -34,6 +34,6 @@
   },
 
   "mounts": [
-    "source=${localEnv:HOME}/.gnupg,target=/home/vscode/.gnupg,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/dev/gpg-backup,target=/home/vscode/gpg-backup,type=bind,consistency=cached"
   ]
 }

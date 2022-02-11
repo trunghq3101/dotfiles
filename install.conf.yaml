@@ -9,12 +9,16 @@
       force: true
 - shell:
     - [sudo chsh -s /usr/bin/zsh, Changing default shell to ZSH]
-    # - command: ./import.sh
-    #   description: Importing GPG keys
-    #   stderr: true
-    #   stdin: true
-    #   stdout: true
-    - [source ~/.zshrc && dedot, Decrypting secrets]
+    - command: ./import.sh
+      description: Importing GPG keys
+      stderr: true
+      stdin: true
+      stdout: true
+    - command: source ~/.zshrc && dedot
+      description: Decrypting secrets
+      stderr: true
+      stdin: true
+      stdout: true
     - [cp -afi ssh/. ~/.ssh/, Copying SSH folder]
     - [chmod -R 0700 ssh ~/.ssh, Making SSH folder read-only]
     - [git submodule update --init --recursive, Updating the submodules]

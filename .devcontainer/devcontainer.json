@@ -31,9 +31,5 @@
 
   "features": {
     "homebrew": "latest"
-  },
-
-  "mounts": [
-    "source=${localEnv:HOME}/dev/gpg-backup,target=/home/vscode/gpg-backup,type=bind,consistency=cached"
-  ]
+  }
 }

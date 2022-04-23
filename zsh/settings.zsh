@@ -103,3 +103,8 @@ export EDITOR='vim'
 
 DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
+
+export ANDROID_SDK_ROOT=$HOME/android
+export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/cmdline-tools/latest:$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/platforms:$HOME/flutter/bin:$PATH"
+export PATH="$PATH:$HOME/fvm/default/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
